@@ -1,0 +1,30 @@
+body{
+    max-width: 80vw;
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("snowstars.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    margin: 2em;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+div#main{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2.15em;
+    padding-bottom: 100%;
+    border-color:white;
+    border-width: 1.8em;
+    border-style: solid;
+}
+#quote{
+    border-left: 0.3em solid rgb(156, 156, 156);
+    padding-left: 10px;
+    margin: 0px;
+}
+#date{
+    color:rgb(66, 170, 255);
+}
