@@ -35,6 +35,7 @@ header a:hover{
     background-color: rgb(209, 209, 209);
 }
 body div{
+    border-radius: 50px;
     max-width: 80vw;
     margin: auto;
 }
@@ -51,17 +52,21 @@ h1{
     color:rgb(252, 242, 200);
 }
 div#main{
-    background-color: rgba(255, 255, 255, 0.82);
+    background-color: rgba(255, 255, 255, 0.62);
     padding-bottom: 100%;
-    border-color:white;
+    border-color:rgb(255, 153, 0);
     border-width: 1.8em;
     border-style: solid;
 }
 div#main #date{
     margin:0;
-    padding: 0.5em;
-    font-size: small;
+    padding: 0.5em 1em;
+    font-size: normal;
     color:rgb(66, 170, 255);
+}
+div#main h2{
+    margin: 0.5em 0;
+    font-size:40px;
 }
 div#main div#paragraph-1{
     padding: 0.5em 2.25em;
