@@ -12,7 +12,7 @@ header{
     top: 0;
     height: 44px;
     line-height: 1.5;
-    width: 100%;
+    width: 100vw;
     display: table;
     overflow: hidden;
 
@@ -36,9 +36,10 @@ header a:hover{
     background-color: rgb(209, 209, 209);
 }
 body div{
-    border-radius: 50px;
-    max-width: 80vw;
-    margin: auto;
+    border-radius: 5px;
+    width: 94vw;
+    margin: 0;
+    align-self: center;
 }
 h1#head{
     margin: 1em auto 1em auto;
@@ -54,10 +55,11 @@ h1#head{
     color:rgb(252, 242, 200);
 }
 div#main{
+    padding: 0 1vw 100% 1vw;
+    margin: 0 1vw 0 1vw;
     background-color: rgba(255, 255, 255, 0.62);
-    padding-bottom: 100%;
     border-color:rgb(255, 153, 0);
-    border-width: 1.8em;
+    border-width: 1.8em 0;
     border-style: solid;
 }
 div#main #date{
@@ -71,7 +73,7 @@ div#main h2{
     font-size:40px;
 }
 div#main div#paragraph-1{
-    padding: 0.5em 2.25em;
+    padding: 0.5em 0.2vw;
 }
 #quote{
     border-left: 0.3em solid rgb(156, 156, 156);
