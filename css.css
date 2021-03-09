@@ -39,7 +39,7 @@ body div{
     max-width: 80vw;
     margin: auto;
 }
-h1{
+h1#head{
     margin: 1em auto 1em auto;
     border-radius: 1em;
     padding: 0.3em;
