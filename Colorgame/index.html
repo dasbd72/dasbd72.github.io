@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Color Game</title>
+    <style>
+        #main{
+            font-size: 2.3rem;
+            color:white;
+            text-shadow: grey 0.12rem 0.12rem 0.2rem;
+            text-align: center;
+            margin: 5rem auto;
+        }
+        .color-box{
+            height: 15rem;
+            width: 15rem;
+            /* border: 0.3rem solid rgb(241, 255, 191); */
+            border: whitesmoke solid 0.01rem;
+            border-radius: 0.6rem;
+            background-color: grey;
+            /* box-shadow: whitesmoke 0 0 0.5rem; */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Color Game</a>
+            <span class="navbar-text">DataLab</span>
+        </div>
+    </nav>
+
+    <div id="main">
+        <p id="color-text">RGB(0,0,0)</p>
+        <p>WHAT'S THE COLOR</p>
+        <p id="response-text"></p>
+        <div class="d-flex flex-row justify-content-evenly ">
+            <button class="d-flex color-box" id="color-box-0"></button>
+            <button class="d-flex color-box" id="color-box-1"></button>
+            <button class="d-flex color-box" id="color-box-2"></button>
+        </div>
+        <button class="btn bg-light" id="color-change-btn">Change</button>
+    </div>
+</body>
+<script src="color.js"></script>
+</html>
