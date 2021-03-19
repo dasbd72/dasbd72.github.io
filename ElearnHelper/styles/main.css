@@ -1,16 +1,18 @@
 #navbar{
+    /* height: 3rem; */
     border-bottom: solid grey 0.1rem;
 }
 .question{
     font-size: 0.8rem;
     max-width: 50rem;
     padding: 1rem;
-    border:solid rgb(172, 103, 0) 0.01rem;
+    border:solid rgb(179, 179, 179) 0.01rem;
     border-radius: 0.8rem;
     margin: 1rem auto;
 }
 .question-block{
     font-family: 'Noto Sans','微軟正黑體','Microsoft JhengHei','新細明體',Arial,sans-serif,Verdana,Arial,Helvetica,sans-serif;
+    color:rgb(202, 202, 202)
 }
 .question-answer{
     align-content: center;
@@ -21,7 +23,7 @@
 .question-input{
     width: 2rem;
     height: 1.3rem;
-    color:rgb(83, 235, 255);
+    color:rgb(191, 152, 255);
     background-color: rgba(0, 0, 0, 0);
     border: solid 0.11rem rgb(94, 94, 94);
     border-radius: 0.3rem;
@@ -33,11 +35,13 @@ input.question-input::-webkit-inner-spin-button {
 .question-output{
     width: 4rem;
     height: 1.5rem;
+    background-color: rgba(169, 138, 255, 0.555);
     margin-right: 0.2rem;
     border-radius: 0.3rem;
 }
 .btn-answer{
-    background-color: rgb(163, 83, 255);
+    background-color: rgba(92, 46, 199, 0.699);
+    color: rgb(176, 161, 243);
     width: auto;
     height: 1.5rem;
     border-radius: 0.3rem;

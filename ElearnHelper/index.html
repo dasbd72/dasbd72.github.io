@@ -11,13 +11,10 @@
     <title>Elearn Helper</title>
 </head>
 <body id="body" class="bg-dark">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Elearn Helper</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
+                <a class="navbar-brand" href="#">Elearn Helper</a>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,17 +28,30 @@
                             <li><a class="dropdown-item" href="#" onclick="chooseChapter(24)">Ch 24</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="" class="nav-link">Tutorial</a>
+                    </li>
                 </ul>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
         
     </nav>
     <!-- 
-        <input type="number" name="q2057:" class="question-input">
-        <div class="question-answer">
-            <input class="question-output" name="q2057:answer" readonly="readonly">
-            <button class="btn-answer" onclick="q2057()">Answer</button>
+        <div id="q" class="question-block">
+            <br>
+
+            <div class="question-answer">
+                <input class="question-output" name="q:answer" readonly="readonly">
+                <button class="btn-answer" onclick="q()">Answer</button>
+                <hr class="question-divide">
+            </div>
         </div>
+
+        <input type="number" name="q:" class="question-input">
+        
      -->
     <div id="chapter20" class="question container text-sm-start text-white">
         <div id="q2019" class="question-block">
@@ -98,7 +108,36 @@
             </div>
         </div>
     </div>
-
+    <div id="chapter21" class="question container text-sm-start text-white">
+        <div id="q2114" class="question-block">
+            21.14 <br>
+            A flat surface with area <input type="number" name="q2114:A" class="question-input"> m<sup>2</sup> lies in the x-y plane, in a uniform electric field E = 8.6 i +3.1 j  + <input type="number" name="q2114:Ek" class="question-input"> k   N/C. Find the flux (N⋅m<sup>2</sup>/C) through the surface.
+            <div class="question-answer">
+                <input class="question-output" name="q2114:answer" readonly="readonly">
+                <button class="btn-answer" onclick="q2114()">Answer</button>
+                <hr class="question-divide">
+            </div>
+        </div>
+        <div id="q2120" class="question-block">
+            21.20<br>
+            A <input type="number" name="q2120:q1" class="question-input"> nC charge and a <input type="number" name="q2120:q2" class="question-input"> nC charge are inside an uncharged sphere. What is the electric flux through the sphere? (in unit of N·m<sup>2</sup>/C) (π=3.14)
+            <div class="question-answer">
+                <input class="question-output" name="q2120:answer" readonly="readonly">
+                <button class="btn-answer" onclick="q2120()">Answer</button>
+                <hr class="question-divide">
+            </div>
+        </div>
+        <div id="q2124" class="question-block">
+            21.24<br>
+            A <input type="number" name="q2124:q1" class="question-input">-nC point charge is at the center of a thin spherical shell of radius 20 cm, carrying -25 nC of charge distributed uniformly over its surface. Find the magnitude (in unit of <span class="" style="color: rgb(239, 69, 64);">kN/C</span>) of the electric field at <input type="number" name="q2124:d" class="question-input"> cm from the point charge.
+            <div class="question-answer">
+                <input class="question-output" name="q2124:answer" readonly="readonly">
+                <button class="btn-answer" onclick="q2124()">Answer</button>
+                <hr class="question-divide">
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

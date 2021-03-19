@@ -45,3 +45,24 @@ function q2057(){
     document.getElementsByName("q2057:answer")[0].value = 
         ( ( (F2/_k)**0.5 + (F1/_k + F2/_k)**0.5)*1e6 ).toPrecision(3);
 }
+function q2114(){
+    var A, Ek;
+    A = getVal("q2114:A");
+    Ek = getVal("q2114:Ek");
+    document.getElementsByName("q2114:answer")[0].value = 
+        ( A*Ek ).toPrecision(3);
+}
+function q2120(){
+    var q1, q2;
+    q1 = getVal("q2120:q1");
+    q2 = getVal("q2120:q2");
+    document.getElementsByName("q2120:answer")[0].value = 
+        ((q1+q2)*4*Math.PI*9).toPrecision(3);
+}
+function q2124(){
+    var q1, d;
+    q1 = getVal("q2124:q1") * 1e-9;
+    d = getVal("q2124:d") * 1e-2;
+    document.getElementsByName("q2124:answer")[0].value = 
+        (_k * q1 / d**2 * 1e-3).toPrecision(3);
+}
