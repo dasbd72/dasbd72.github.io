@@ -72,3 +72,62 @@ function q2132(){
     document.getElementsByName("q2132:answer")[0].value = 
         (dens / _eslon0).toPrecision(3);
 }
+function q2144(){
+    var r, E;
+    r = getVal("q2144:r");
+    E = getVal("q2144:E");
+    document.getElementsByName("q2144:answer")[0].value = 
+        (E * Math.PI * r**2).toPrecision(3);
+}
+function q2155(){
+    var r, delt;
+    r = getVal("q2155:r") * 1e-2;
+    delt = getVal("q2155:delt") * 1e-9;
+    document.getElementsByName("q2155:answer")[0].value = 
+        (delt / (_eslon0 * 2 * Math.PI * r)).toPrecision(3);
+}
+function q2216(){
+    var Q, V;
+    Q = getVal("q2216:Q");
+    V = getVal("q2216:V");
+    document.getElementsByName("q2216:answer")[0].value = 
+        (Q * V).toPrecision(3);
+}
+function q2223(){
+    var Q, di;
+    Q = getVal("q2223:Q") * 1e-6;
+    di = getVal("q2223:di") * 1e-2;
+    document.getElementsByName("q2223:answer")[0].value = 
+        (_k * Q / (di / 2) * 1e-3).toPrecision(3);
+}
+function q2240(){
+    var E, d;
+    E = getVal("q2240:E") * 1e6;
+    d = getVal("q2240:d") * 1e-9;
+    document.getElementsByName("q2240:answer")[0].value = 
+        (E * d * 1e3).toPrecision(3);
+}
+function q2252(){
+    var r1, r2, dens;
+    r1 = getVal("q2252:r1") / 2;
+    r2 = getVal("q2252:r2") * 10 / 2;
+    dens = getVal("q2252:dens") * 1e-9;
+    document.getElementsByName("q2252:answer")[0].value = 
+        Number((dens / (2 * Math.PI * _eslon0) * Math.log(r2 / r1)).toPrecision(3));
+}
+function q2267(){
+    var Q, d;
+    Q = getVal("q2267:Q") * 1e-6;
+    d = getVal("q2267:d");
+    document.getElementsByName("q2267:answer")[0].value = 
+        Number(( _k * Q / (d/2) * 2 ).toPrecision(3));
+}
+function q2280(){
+    var R, L, Q;
+    R = getVal("q2280:R");
+    L = getVal("q2280:L");
+    Q = getVal("q2280:Q") * 1e-9;
+    var M = (R**2 + (L/2)**2) ** 0.5;
+    document.getElementsByName("q2280:answer")[0].value = 
+        Number(( _k * Q / L * Math.log( (M + L/2)/ (M - L/2)) ).toPrecision(3));
+}
