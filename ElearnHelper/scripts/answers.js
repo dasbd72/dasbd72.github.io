@@ -66,3 +66,9 @@ function q2124(){
     document.getElementsByName("q2124:answer")[0].value = 
         (_k * q1 / d**2 * 1e-3).toPrecision(3);
 }
+function q2132(){
+    var dens;
+    dens = getVal("q2132:dens") * 1e-9;
+    document.getElementsByName("q2132:answer")[0].value = 
+        (dens / _eslon0).toPrecision(3);
+}
