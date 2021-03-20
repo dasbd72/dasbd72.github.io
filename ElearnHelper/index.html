@@ -11,8 +11,8 @@
 </head>
 
 <body id="body" class="bg-dark">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container ">
             <a class="navbar-brand" href="#">Elearn Helper</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Midterm 1
                         </a>
-                        <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarScrollingDropdown">
+                        <ul class="dropdown-menu bg-gradient" aria-labelledby="navbarScrollingDropdown">
                             <li><a class="dropdown-item" href="#" onclick="chooseChapter(20)">Ch 20</a></li>
                             <li><a class="dropdown-item" href="#" onclick="chooseChapter(21)">Ch 21</a></li>
                             <li><a class="dropdown-item" href="#" onclick="chooseChapter(22)">Ch 22</a></li>
@@ -53,175 +53,178 @@
         <input type="number" name="q:" class="question-input">
         
      -->
-    <div id="chapter20" class="question container text-sm-start text-white">
-        <div id="q2019" class="question-block">
-            20.19 <br>
-            A charge q = <input type="number" name="q2019:q1" class="question-input"> C is at the point x = <input type="number" name="q2019:x1" class="question-input">, y = <input type="number" name="q2019:y1" class="question-input"> m. Find the magnitude of the electric force that charge q exerts on other charges Q = <input type="number" name="q2019:q2" class="question-input"> C located at x = <input type="number" name="q2019:x2" class="question-input"> m, y = <input type="number" name="q2019:y2" class="question-input"> m. (in unit of 10<sup>9 </sup>N)
-            <div class="question-answer">
-                <input class="question-output" name="q2019:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2019()">Answer</button>
+    <div id="main">
+        <div id="chapter20" class="question container text-sm-start text-white">
+            <div id="q2019" class="question-block">
+                20.19 <br>
+                A charge q = <input type="number" name="q2019:q1" class="question-input"> C is at the point x = <input type="number" name="q2019:x1" class="question-input">, y = <input type="number" name="q2019:y1" class="question-input"> m. Find the magnitude of the electric force that charge q exerts on other charges Q = <input type="number" name="q2019:q2" class="question-input"> C located at x = <input type="number" name="q2019:x2" class="question-input"> m, y = <input type="number" name="q2019:y2" class="question-input"> m. (in unit of 10<sup>9 </sup>N)
+                <div class="question-answer">
+                    <input class="question-output" name="q2019:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2019()">Answer</button>
+                </div>
+            </div>
+            <hr class="question-divide">
+            <div id="q2026" class="question-block">
+                20.26 <br>
+                The electron in a hydrogen atom is <input type="number" name="q2026:d" class="question-input"> pm from the proton. At this distance, what is the strength of the electric field due to the proton? (in unit of 10<sup>11</sup> N/C)
+                <div class="question-answer">
+                    <input class="question-output" name="q2026:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2026()">Answer</button>
+                </div>
+            </div>
+            <hr class="question-divide">
+            <div id="q2034" class="question-block">
+                20.34 <br>
+                A proton moving to the right at <input type="number" name="q2034:V" class="question-input">&nbsp;× 10<sup>6</sup>&nbsp;m/s enters a region where a <input type="number" name="q2034:E" class="question-input">-kN/C electric field points to the left. How far (m) will the proton get before it momentarily stops? Proton mass = 1.67×10<sup>-27</sup> kg.
+                <div class="question-answer">
+                    <input class="question-output" name="q2034:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2034()">Answer</button>
+                </div>
+            </div>
+            <hr class="question-divide">
+            <div id="q2046" class="question-block">
+                20.46 <br>
+                A charge <input type="number" name="q2046:q1" class="question-input"> C is at the origin, and a charge <input type="number" name="q2046:q2" class="question-input"> C is on the positive x-axis at x = 1 m. Where would you place a third charge so it would experience no net electric force? (x = ? in unit of m)
+                <div class="question-answer">
+                    <input class="question-output" name="q2046:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2046()">Answer</button>
+                </div>
+            </div>
+            <hr class="question-divide">
+            <div id="q2048" class="question-block">
+                20.48 <br>
+                In this figure, q1 = <input type="number" name="q2048:q1" class="question-input"> µC, q2 = <input type="number" name="q2048:q2" class="question-input"> µC, and q3 = <input type="number" name="q2048:q3" class="question-input"> µC. Find the magnitude of the electric force on q3. (in unit of N)
+                <div class="question-answer">
+                    <input class="question-output" name="q2048:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2048()">Answer</button>
+                </div>
+            </div>
+            <hr class="question-divide">
+            <div class="question-block">
+                20.57 <br>
+                Two identical small metal spheres initially carry positive charge q1 and negative charge -q2, where q1 &gt; q2. When they are 1 m apart, they experience a <input type="number" name="q2057:F1" class="question-input">-N attractive force. Then they are brought together so charge moves from one to the other until they have the same net charge. They are again 1 m apart, and now they repel with a <input type="number" name="q2057:F2" class="question-input">-N force. What is the original charge q1? (in unit of µC)
+                <div class="question-answer">
+                    <input class="question-output" name="q2057:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2057()">Answer</button>
+                </div>
             </div>
         </div>
-        <hr class="question-divide">
-        <div id="q2026" class="question-block">
-            20.26 <br>
-            The electron in a hydrogen atom is <input type="number" name="q2026:d" class="question-input"> pm from the proton. At this distance, what is the strength of the electric field due to the proton? (in unit of 10<sup>11</sup> N/C)
-            <div class="question-answer">
-                <input class="question-output" name="q2026:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2026()">Answer</button>
+        <div id="chapter21" class="question container text-sm-start text-white">
+            <div id="q2114" class="question-block">
+                21.14 <br>
+                A flat surface with area <input type="number" name="q2114:A" class="question-input"> m<sup>2</sup> lies in the x-y plane, in a uniform electric field E = 8.6 i +3.1 j  + <input type="number" name="q2114:Ek" class="question-input"> k   N/C. Find the flux (N⋅m<sup>2</sup>/C) through the surface.
+                <div class="question-answer">
+                    <input class="question-output" name="q2114:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2114()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2120" class="question-block">
+                21.20<br>
+                A <input type="number" name="q2120:q1" class="question-input"> nC charge and a <input type="number" name="q2120:q2" class="question-input"> nC charge are inside an uncharged sphere. What is the electric flux through the sphere? (in unit of N·m<sup>2</sup>/C) (π=3.14)
+                <div class="question-answer">
+                    <input class="question-output" name="q2120:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2120()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2124" class="question-block">
+                21.24<br>
+                A <input type="number" name="q2124:q1" class="question-input">-nC point charge is at the center of a thin spherical shell of radius 20 cm, carrying -25 nC of charge distributed uniformly over its surface. Find the magnitude (in unit of <span class="" style="color: rgb(239, 69, 64);">kN/C</span>) of the electric field at <input type="number" name="q2124:d" class="question-input"> cm from the point charge.
+                <div class="question-answer">
+                    <input class="question-output" name="q2124:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2124()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2132" class="question-block">
+                21.32<br>
+                What is the electric field strength (N/C) just outside the surface of a conducting sphere carrying surface charge density <input type="number" name="q2132:dens" class="question-input"> nC/m<sup>2</sup>?
+                <div class="question-answer">
+                    <input class="question-output" name="q2132:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2132()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2144" class="question-block">
+                21.44<br>
+                What is the flux (N·m<sup>2</sup>/C) through the hemispherical open surface of radius <input type="number" name="q2144:r" class="question-input"> m in a uniform electric field of <input type="number" name="q2144:E" class="question-input"> N/C as shown in the figure? (The direction of the electric field is along the axis of the hemisphere.)
+                <div class="question-answer">
+                    <input class="question-output" name="q2144:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2144()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2155" class="question-block">
+                21.55<br>
+                
+                A long, thin wire carrying <input type="number" name="q2155:delt" class="question-input"> nC/m runs down the center of a long, thin-walled pipe with radius 46.8 cm carrying -4.8 nC/m spread uniformly over its surface. Find the magnitude of the electric field <input type="number" name="q2155:r" class="question-input"> cm from the wire.&nbsp;(in unit of N/C)
+    
+                <div class="question-answer">
+                    <input class="question-output" name="q2155:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2155()">Answer</button>
+                </div>
             </div>
         </div>
-        <hr class="question-divide">
-        <div id="q2034" class="question-block">
-            20.34 <br>
-            A proton moving to the right at <input type="number" name="q2034:V" class="question-input">&nbsp;× 10<sup>6</sup>&nbsp;m/s enters a region where a <input type="number" name="q2034:E" class="question-input">-kN/C electric field points to the left. How far (m) will the proton get before it momentarily stops? Proton mass = 1.67×10<sup>-27</sup> kg.
-            <div class="question-answer">
-                <input class="question-output" name="q2034:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2034()">Answer</button>
+        <div id="chapter22" class="question container text-sm-start text-white">
+            <div id="q2216" class="question-block">
+                22.16 <br>
+                A charge of <input type="number" name="q2216:Q" class="question-input"> C moves from the positive to the negative terminal of a <input type="number" name="q2216:V" class="question-input">-V battery. How much energy does the battery impart to the charge? (in unit of J)
+                <div class="question-answer">
+                    <input class="question-output" name="q2216:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2216()">Answer</button>
+                    <hr class="question-divide">
+                </div>
             </div>
-        </div>
-        <hr class="question-divide">
-        <div id="q2046" class="question-block">
-            20.46 <br>
-            A charge <input type="number" name="q2046:q1" class="question-input"> C is at the origin, and a charge <input type="number" name="q2046:q2" class="question-input"> C is on the positive x-axis at x = 1 m. Where would you place a third charge so it would experience no net electric force? (x = ? in unit of m)
-            <div class="question-answer">
-                <input class="question-output" name="q2046:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2046()">Answer</button>
+            <div id="q2223" class="question-block">
+                22.23<br>
+                A <input type="number" name="q2223:di" class="question-input">-cm diameter isolated metal sphere carries <input type="number" name="q2223:Q" class="question-input">&nbsp;μC. Find the potential (in unit of <span class="" style="color: rgb(239, 69, 64);">kV</span>) at the sphere's surface. (The potential at infinity is set to be zero.)
+                <div class="question-answer">
+                    <input class="question-output" name="q2223:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2223()">Answer</button>
+                    <hr class="question-divide">
+                </div>
             </div>
-        </div>
-        <hr class="question-divide">
-        <div id="q2048" class="question-block">
-            20.48 <br>
-            In this figure, q1 = <input type="number" name="q2048:q1" class="question-input"> µC, q2 = <input type="number" name="q2048:q2" class="question-input"> µC, and q3 = <input type="number" name="q2048:q3" class="question-input"> µC. Find the magnitude of the electric force on q3. (in unit of N)
-            <div class="question-answer">
-                <input class="question-output" name="q2048:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2048()">Answer</button>
+            <div id="q2240" class="question-block">
+                22.40<br>
+                The electric field within a cell membrane is approximately <input type="number" name="q2240:E" class="question-input"> MV/m and is essentially uniform. If the membrane is <input type="number" name="q2240:d" class="question-input"> nm thick, what's the potential difference (in unit of <span class="" style="color: rgb(239, 69, 64);">mV</span>) across the membrane?
+                <div class="question-answer">
+                    <input class="question-output" name="q2240:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2240()">Answer</button>
+                    <hr class="question-divide">
+                </div>
             </div>
-        </div>
-        <hr class="question-divide">
-        <div class="question-block">
-            20.57 <br>
-            Two identical small metal spheres initially carry positive charge q1 and negative charge -q2, where q1 &gt; q2. When they are 1 m apart, they experience a <input type="number" name="q2057:F1" class="question-input">-N attractive force. Then they are brought together so charge moves from one to the other until they have the same net charge. They are again 1 m apart, and now they repel with a <input type="number" name="q2057:F2" class="question-input">-N force. What is the original charge q1? (in unit of µC)
-            <div class="question-answer">
-                <input class="question-output" name="q2057:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2057()">Answer</button>
+            <div id="q2252" class="question-block">
+                22.52<br>
+                A coaxial cable is used to connect the transmitter and the antenna. The cable consists of a <input type="number" name="q2252:r1" class="question-input">-mm diameter inner conductor and an outer conductor with diameter D = <input type="number" name="q2252:r2" class="question-input"> cm and negligible thickness. If the conductors carry charge density ±<input type="number" name="q2252:dens" class="question-input"> nC/m, what is the potential difference between the two conductors? (in unit of V and take positive value.)
+                <div class="question-answer">
+                    <input class="question-output" name="q2252:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2252()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2267" class="question-block">
+                22.67<br>
+                Two 9.5-cm-diameter conducting spheres are <input type="number" name="q2267:d" class="question-input"> m apart (measured from their centers), and each carries charge <input type="number" name="q2267:Q" class="question-input">&nbsp;μC. Determine the potential (in unit of V) midway between the two spheres. (The potential at infinity is set to be zero.)
+                <div class="question-answer">
+                    <input class="question-output" name="q2267:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2267()">Answer</button>
+                    <hr class="question-divide">
+                </div>
+            </div>
+            <div id="q2280" class="question-block">
+                22.80<br>
+                
+                An open-ended (hollow) cylinder of radius R = <input type="number" name="q2280:R" class="question-input"> m and length = <input type="number" name="q2280:L" class="question-input"> m carries charge <input type="number" name="q2280:Q" class="question-input"> nC that spreads uniformly over its surface. What is the potential (in unit of V) at the center of the cylinder? (Hint: treat the cylinder as a stack of charged rings, and integrate. Potential at infinity is zero.)
+    
+                <div class="question-answer">
+                    <input class="question-output" name="q2280:answer" readonly="readonly">
+                    <button class="btn-answer" onclick="q2280()">Answer</button>
+                </div>
             </div>
         </div>
     </div>
-    <div id="chapter21" class="question container text-sm-start text-white">
-        <div id="q2114" class="question-block">
-            21.14 <br>
-            A flat surface with area <input type="number" name="q2114:A" class="question-input"> m<sup>2</sup> lies in the x-y plane, in a uniform electric field E = 8.6 i +3.1 j  + <input type="number" name="q2114:Ek" class="question-input"> k   N/C. Find the flux (N⋅m<sup>2</sup>/C) through the surface.
-            <div class="question-answer">
-                <input class="question-output" name="q2114:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2114()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2120" class="question-block">
-            21.20<br>
-            A <input type="number" name="q2120:q1" class="question-input"> nC charge and a <input type="number" name="q2120:q2" class="question-input"> nC charge are inside an uncharged sphere. What is the electric flux through the sphere? (in unit of N·m<sup>2</sup>/C) (π=3.14)
-            <div class="question-answer">
-                <input class="question-output" name="q2120:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2120()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2124" class="question-block">
-            21.24<br>
-            A <input type="number" name="q2124:q1" class="question-input">-nC point charge is at the center of a thin spherical shell of radius 20 cm, carrying -25 nC of charge distributed uniformly over its surface. Find the magnitude (in unit of <span class="" style="color: rgb(239, 69, 64);">kN/C</span>) of the electric field at <input type="number" name="q2124:d" class="question-input"> cm from the point charge.
-            <div class="question-answer">
-                <input class="question-output" name="q2124:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2124()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2132" class="question-block">
-            21.32<br>
-            What is the electric field strength (N/C) just outside the surface of a conducting sphere carrying surface charge density <input type="number" name="q2132:dens" class="question-input"> nC/m<sup>2</sup>?
-            <div class="question-answer">
-                <input class="question-output" name="q2132:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2132()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2144" class="question-block">
-            21.44<br>
-            What is the flux (N·m<sup>2</sup>/C) through the hemispherical open surface of radius <input type="number" name="q2144:r" class="question-input"> m in a uniform electric field of <input type="number" name="q2144:E" class="question-input"> N/C as shown in the figure? (The direction of the electric field is along the axis of the hemisphere.)
-            <div class="question-answer">
-                <input class="question-output" name="q2144:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2144()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2155" class="question-block">
-            21.55<br>
-            
-            A long, thin wire carrying <input type="number" name="q2155:delt" class="question-input"> nC/m runs down the center of a long, thin-walled pipe with radius 46.8 cm carrying -4.8 nC/m spread uniformly over its surface. Find the magnitude of the electric field <input type="number" name="q2155:r" class="question-input"> cm from the wire.&nbsp;(in unit of N/C)
-
-            <div class="question-answer">
-                <input class="question-output" name="q2155:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2155()">Answer</button>
-            </div>
-        </div>
-    </div>
-    <div id="chapter22" class="question container text-sm-start text-white">
-        <div id="q2216" class="question-block">
-            22.16 <br>
-            A charge of <input type="number" name="q2216:Q" class="question-input"> C moves from the positive to the negative terminal of a <input type="number" name="q2216:V" class="question-input">-V battery. How much energy does the battery impart to the charge? (in unit of J)
-            <div class="question-answer">
-                <input class="question-output" name="q2216:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2216()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2223" class="question-block">
-            22.23<br>
-            A <input type="number" name="q2223:di" class="question-input">-cm diameter isolated metal sphere carries <input type="number" name="q2223:Q" class="question-input">&nbsp;μC. Find the potential (in unit of <span class="" style="color: rgb(239, 69, 64);">kV</span>) at the sphere's surface. (The potential at infinity is set to be zero.)
-            <div class="question-answer">
-                <input class="question-output" name="q2223:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2223()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2240" class="question-block">
-            22.40<br>
-            The electric field within a cell membrane is approximately <input type="number" name="q2240:E" class="question-input"> MV/m and is essentially uniform. If the membrane is <input type="number" name="q2240:d" class="question-input"> nm thick, what's the potential difference (in unit of <span class="" style="color: rgb(239, 69, 64);">mV</span>) across the membrane?
-            <div class="question-answer">
-                <input class="question-output" name="q2240:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2240()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2252" class="question-block">
-            22.52<br>
-            A coaxial cable is used to connect the transmitter and the antenna. The cable consists of a <input type="number" name="q2252:r1" class="question-input">-mm diameter inner conductor and an outer conductor with diameter D = <input type="number" name="q2252:r2" class="question-input"> cm and negligible thickness. If the conductors carry charge density ±<input type="number" name="q2252:dens" class="question-input"> nC/m, what is the potential difference between the two conductors? (in unit of V and take positive value.)
-            <div class="question-answer">
-                <input class="question-output" name="q2252:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2252()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2267" class="question-block">
-            22.67<br>
-            Two 9.5-cm-diameter conducting spheres are <input type="number" name="q2267:d" class="question-input"> m apart (measured from their centers), and each carries charge <input type="number" name="q2267:Q" class="question-input">&nbsp;μC. Determine the potential (in unit of V) midway between the two spheres. (The potential at infinity is set to be zero.)
-            <div class="question-answer">
-                <input class="question-output" name="q2267:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2267()">Answer</button>
-                <hr class="question-divide">
-            </div>
-        </div>
-        <div id="q2280" class="question-block">
-            22.80<br>
-            
-            An open-ended (hollow) cylinder of radius R = <input type="number" name="q2280:R" class="question-input"> m and length = <input type="number" name="q2280:L" class="question-input"> m carries charge <input type="number" name="q2280:Q" class="question-input"> nC that spreads uniformly over its surface. What is the potential (in unit of V) at the center of the cylinder? (Hint: treat the cylinder as a stack of charged rings, and integrate. Potential at infinity is zero.)
-
-            <div class="question-answer">
-                <input class="question-output" name="q2280:answer" readonly="readonly">
-                <button class="btn-answer" onclick="q2280()">Answer</button>
-            </div>
-        </div>
-    </div>
+    
     
 </body>
 
