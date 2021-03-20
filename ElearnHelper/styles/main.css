@@ -22,7 +22,7 @@
 .question-input{
     width: 2rem;
     height: 1.3rem;
-    color:rgb(191, 152, 255);
+    color:rgb(255, 228, 152);
     background-color: rgba(0, 0, 0, 0);
     border: solid 0.11rem rgb(94, 94, 94);
     border-radius: 0.3rem;
@@ -34,13 +34,13 @@ input.question-input::-webkit-inner-spin-button {
 .question-output{
     width: 4rem;
     height: 1.5rem;
-    background-color: rgba(169, 138, 255, 0.555);
+    background-color: rgba(255, 218, 138, 0.555);
     margin-right: 0.2rem;
     border-radius: 0.3rem;
 }
 .btn-answer{
-    background-color: rgba(92, 46, 199, 0.699);
-    color: rgb(176, 161, 243);
+    background-color: rgba(255, 220, 181, 0.342);
+    color: rgb(214, 214, 214);
     width: auto;
     height: 1.5rem;
     border-radius: 0.3rem;
