@@ -4,4 +4,4 @@ function chooseChapter(numChapter){
     for(var chapter of chapters) chapter.style.display = "none";
     choosenChapter.style.display = "block";
 }
-window.onload = chooseChapter(22);
+window.onload = chooseChapter(23);

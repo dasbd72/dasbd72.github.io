@@ -131,3 +131,43 @@ function q2280(){
     document.getElementsByName("q2280:answer")[0].value = 
         Number(( _k * Q / L * Math.log( (M + L/2)/ (M - L/2)) ).toPrecision(3));
 }
+function q2313(){
+    var Q;
+    Q = getVal("q2313:Q");
+    document.getElementsByName("q2313:answer")[0].value = 
+        Number((9 * 1.6 * (2 * Q + 1 / (2*(1-Math.cos(Math.PI*105/180) ) )**0.5) ).toPrecision(3));
+}
+function q2326(){
+    var U, E;
+    U = getVal("q2326:U") * 1e6;
+    E = getVal("q2326:E") * 1e3;
+    document.getElementsByName("q2326:answer")[0].value = 
+        Number((2*U/(_eslon0 * E**2)*1e-9).toPrecision(3));
+}
+function q2332(){
+    var V;
+    V = getVal("q2332:V");
+    document.getElementsByName("q2332:answer")[0].value = 
+        Number(( 0.5*2.7*1e-6*(V**2)*(1.420809**2)/(4.5**2) * 1e3 ).toPrecision(3));
+}
+function q2338(){
+    var Q;
+    Q = getVal("q2338:Q");
+    document.getElementsByName("q2338:answer")[0].value = 
+        Number(( (Q**2)/(8*Math.PI*_eslon0)*(1/0.3) *1e-9 ).toPrecision(3));
+}
+function q2357(){
+    var r, q;
+    r = getVal("q2357:d") * 1e-3 / 2;
+    q = getVal("q2357:q") * 1e-9;
+    document.getElementsByName("q2357:answer")[0].value = 
+        Number(( _k * q**2 / r * (2/2**(1/3) - 1) * 1e3 ).toPrecision(3));
+}
+function q2360(){
+    var a, b, L;
+    a = getVal("q2360:a");
+    b = getVal("q2360:b");
+    L = getVal("q2360:L");
+    document.getElementsByName("q2360:answer")[0].value = 
+        Number(( 2*Math.PI*L*_eslon0/Math.log(b/a) *1e12 ).toPrecision(3));
+}
