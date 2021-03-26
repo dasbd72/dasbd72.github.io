@@ -161,7 +161,7 @@ function q2357(){
     r = getVal("q2357:d") * 1e-3 / 2;
     q = getVal("q2357:q") * 1e-9;
     document.getElementsByName("q2357:answer")[0].value = 
-        Number(( _k * q**2 / r * (2/2**(1/3) - 1) * 1e3 ).toPrecision(3));
+        Number(( _k * q**2 / r * (2/2**(1/3) - 1) * 1e3 / 2 ).toPrecision(3));
 }
 function q2360(){
     var a, b, L;
