@@ -42,12 +42,13 @@ input.question-input::-webkit-inner-spin-button {
 .question-output{
     width: 4rem;
     height: 1.5rem;
-    background-color: rgba(231, 223, 206, 0.555);
+    background-color: rgba(219, 219, 195, 0.842);
     margin-right: 0.2rem;
     border-radius: 0.3rem;
+    border: 0;
 }
 .btn-answer{
-    background-color: rgba(255, 220, 181, 0.342);
+    background-color: rgba(136, 136, 136, 0.733);
     color: rgb(214, 214, 214);
     width: auto;
     height: 1.5rem;
@@ -55,5 +56,5 @@ input.question-input::-webkit-inner-spin-button {
     border: 0;
 }
 .btn-answer:focus{
-    border: solid 0.1rem rgba(0, 134, 223, 0.63);
+    color: rgb(156, 195, 212);
 }
